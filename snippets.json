@@ -1,0 +1,163 @@
+//CSS
+{
+  "margin": {
+    "prefix": "m",
+    "body": ["margin: ${0};"],
+    "description": "margin"
+  },
+  "margin-top": {
+    "prefix": "mt",
+    "body": ["margin-top: ${0};"],
+    "description": "margin-top"
+  },
+  "margin-bottom": {
+    "prefix": "mb",
+    "body": ["margin-bottom: ${0};"],
+    "description": "margin-bottom"
+  },
+  "margin-left": {
+    "prefix": "ml",
+    "body": ["margin-left: ${0};"],
+    "description": "margin-left"
+  },
+  "margin-right": {
+    "prefix": "mr",
+    "body": ["margin-right: ${0};"],
+    "description": "margin-right"
+  },
+  "padding": {
+    "prefix": "p",
+    "body": ["padding: ${0};"],
+    "description": "padding"
+  },
+  "padding-top": {
+    "prefix": "pt",
+    "body": ["padding-top: ${0};"],
+    "description": "padding-top"
+  },
+  "padding-bottom": {
+    "prefix": "pb",
+    "body": ["padding-bottom: ${0};"],
+    "description": "padding-bottom"
+  },
+  "padding-left": {
+    "prefix": "pl",
+    "body": ["padding-left: ${0};"],
+    "description": "padding-left"
+  },
+  "padding-right": {
+    "prefix": "pr",
+    "body": ["padding-right: ${0};"],
+    "description": "padding-right"
+  },
+  "font-face": {
+    "prefix": "@f",
+    "body": ["@font-face {", "  font-family: \"${0}\";", "  src: url(${1});", "}"],
+    "description": "font-face"
+  },
+  "media": {
+    "prefix": "@mmax",
+    "body": ["@media only screen and (max-width: ${1}px){ ${2}}"],
+    "description": "media query max-width"
+  },
+  "background-color": {
+    "prefix": "bgc",
+    "body": ["background-color:${1:#};"],
+    "description": "background"
+  },
+  "background-url": {
+    "prefix": "bgurl",
+    "body": ["background: url(\"${0}\");"],
+    "description": "background"
+  },
+  "background-repeat": {
+    "prefix": "bgr",
+    "body": ["background-repeat: ${0};"],
+    "description": "background-repeat"
+  },
+  "background-size": {
+    "prefix": "bgsz",
+    "body": ["background-size: ${0};"],
+    "description": "background-size"
+  },
+  "box-sizing": {
+    "prefix": "bxsz",
+    "body": ["box-sizing: border-box;"],
+    "description": "box-sizing"
+  },
+  "display-flex": {
+    "prefix": "df",
+    "body": ["display: flex;"],
+    "description": "display-flex"
+  },
+  "display-inline-block": {
+    "prefix": "dib",
+    "body": ["display: inline-block;"],
+    "description": "display-inline-block"
+  },
+  "display-block": {
+    "prefix": "db",
+    "body": ["display: block;"],
+    "description": "display-block"
+  },
+  "font": {
+    "prefix": "f",
+    "body": ["font: \"${0}\", sans-serif;"],
+    "description": "font"
+  },
+  "float": {
+    "prefix": "fl",
+    "body": ["float: ${0};"],
+    "description": "float"
+  },
+  "font-weight": {
+    "prefix": "fw",
+    "body": ["font-weight: ${0};"],
+    "description": "float-weight"
+  },
+  "flex": {
+    "prefix": "fx",
+    "body": ["flex: 0 0 ${0};"],
+    "description": "flex"
+  },
+  "flex-direction": {
+    "prefix": "fxd",
+    "body": ["flex-direction: ${0};"],
+    "description": "flex-direction"
+  },
+  "font-size": {
+    "prefix": "fsz",
+    "body": ["font-size: ${0};"],
+    "description": "font-size"
+  },
+  "height": {
+    "prefix": "h",
+    "body": ["height: ${0};"],
+    "description": "height"
+  },
+  "flex-justify-content": {
+    "prefix": "fjc",
+    "body": ["justify-content: ${0};"],
+    "description": "flex-justify-content"
+  },
+  "flex-align-items": {
+    "prefix": "fai",
+    "body": ["align-items: ${0};"],
+    "description": "flex-align-items"
+  },
+  "positon": {
+    "prefix": "pos",
+    "body": ["position: ${0};"],
+    "description": "positon"
+  },
+  "width": {
+    "prefix": "w",
+    "body": ["width: ${0};"],
+    "description": "width"
+  },
+  "z-index": {
+    "prefix": "z",
+    "body": ["z-index: ${0};"],
+    "description": "z-index"
+  }
+}
