@@ -1,200 +1,70 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "ctrl+right",
-        "command": "-cursorWordEndRight",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+w",
-        "command": "cursorWordEndRight"
-    },
-    {
-        "key": "alt+b",
-        "command": "cursorWordEndLeft"
-    },
-    {
-        "key": "ctrl+right",
-        "command": "cursorWordStartRight"
-    },
-    {
-        "key": "ctrl+shift+d",
-        "command": "-workbench.view.debug"
-    },
-    {
-        "key": "ctrl+shift+d",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    // {
-    //   "key": "ctrl+alt+w",
-    //   "command": "editor.emmet.action.wrapWithAbbreviation"
-    // },
-    {
-        "key": "ctrl+shift+w",
-        "command": "editor.action.smartSelect.grow"
-    },
-    {
-        "key": "ctrl+k ctrl+shift+w",
-        "command": "-workbench.action.closeAllGroups"
-    },
-    {
-        "key": "ctrl+shift+w",
-        "command": "-workbench.action.closeWindow"
-    },
-    {
-        "key": "ctrl+shift+w",
-        "command": "-workbench.action.closeWindow"
-    },
-    {
-        "key": "ctrl+shift+w",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+f4",
-        "command": "-workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+[",
-        "command": "-editor.action.outdentLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+]",
-        "command": "-editor.action.indentLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+w",
-        "command": "editor.action.smartSelect.grow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-editor.action.smartSelect.grow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-workbench.action.closeWindow",
-        "when": "!editorIsOpen && !multipleEditorGroups"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-workbench.action.closeGroup",
-        "when": "activeEditorGroupEmpty && multipleEditorGroups"
-    },
-    {
-        "key": "alt+[",
-        "command": "cursorHome",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "home",
-        "command": "-cursorHome",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+alt+[",
-        "command": "cursorHomeSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+home",
-        "command": "-cursorHomeSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+]",
-        "command": "cursorEnd",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "end",
-        "command": "-cursorEnd",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+alt+]",
-        "command": "cursorEndSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+end",
-        "command": "-cursorEndSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+i",
-        "command": "editor.emmet.action.balanceIn"
-    },
-    {
-        "key": "alt+o",
-        "command": "editor.emmet.action.balanceOut"
-    },
-    {
-        "key": "shift+alt+w",
-        "command": "cursorWordEndRightSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+right",
-        "command": "-cursorWordEndRightSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+alt+b",
-        "command": "cursorWordStartLeftSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+left",
-        "command": "-cursorWordStartLeftSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+e",
-        "command": "cursorLineEnd"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "editor.action.smartSelect.shrink",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+left",
-        "command": "-editor.action.smartSelect.shrink",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "explorer.newFile",
-        "when": "explorerViewletFocus"
-    },
-    {
-        "key": "alt+`",
-        "command": "workbench.action.navigateToLastEditLocation"
-    },
-    {
-        "key": "ctrl+k ctrl+q",
-        "command": "-workbench.action.navigateToLastEditLocation"
-    },
-    {
-        "key": "alt+a",
-        "command": "cursorLineStart"
-    },
-    {
-        "key": "ctrl+`",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    }
+  {
+    "key": "ctrl+shift+d",
+    "command": "-workbench.view.debug"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+[",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "home",
+    "command": "-cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+[",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+home",
+    "command": "-cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+]",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "end",
+    "command": "-cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+]",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+end",
+    "command": "-cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+` alt+`",
+    "command": "workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "ctrl+k ctrl+q",
+    "command": "-workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "shift+alt+w",
+    "command": "editor.action.smartSelect.grow",
+    "when": "editorTextFocus"
+  }
 ]
