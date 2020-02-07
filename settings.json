@@ -14,8 +14,7 @@
     "files.trimTrailingWhitespace": true,
     "workbench.tree.renderIndentGuides": "always",
     "window.menuBarVisibility": "compact",
-    "window.zoomLevel": -1,
-    "search.location": "panel",
+    "window.zoomLevel": -0.5,
     "search.enableSearchEditorPreview": true,
     "search.showLineNumbers": true,
     "search.useGlobalIgnoreFiles": true,
@@ -49,7 +48,8 @@
         "editor.selectionHighlightBackground": "#2A4558",
         "editor.selectionHighlightBorder": "#E4D9C5",
         "activityBar.foreground": "#E4D9C5",
-        "terminal.ansiBrightBlack": "#a88"
+        "terminal.ansiBrightBlack": "#a88",
+        "editor.foldBackground": "#2c4250"
     },
     "explorer.openEditors.visible": 0,
     "editor.tabSize": 2,
@@ -69,5 +69,12 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.renderSideBySide": true,
+    "workbench.list.keyboardNavigation": "filter",
+    "timeline.showView": true,
+    "editor.semanticHighlighting.enabled": true
 }
