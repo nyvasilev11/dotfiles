@@ -1,4 +1,4 @@
-{
+ {
     "workbench.startupEditor": "newUntitledFile",
     "editor.cursorStyle": "block",
     "editor.fontFamily": "'PTMono', Consolas, 'Courier New', monospace",
@@ -30,26 +30,33 @@
     "html.mirrorCursorOnMatchingTag": false,
     "scss.lint.duplicateProperties": "warning",
     "scss.lint.float": "warning",
-    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Cobalt2",
     "extensions.ignoreRecommendations": false,
     "workbench.settings.editor": "json",
     "workbench.settings.useSplitJSON": true,
     "editor.tokenColorCustomizations": {
         "[Cobalt2]": {
-            "comments": "#ae7a2c"
+            "comments": "#AE7A2C"
         }
     },
     "workbench.colorCustomizations": {
-        "editorIndentGuide.activeBackground": "#c7c234",
+        "editorIndentGuide.activeBackground": "#C7C234",
         "editorBracketMatch.background": "#415F73",
         "editor.lineHighlightBackground": "#2A4558",
         "editor.selectionBackground": "#415F73",
         "editor.selectionHighlightBackground": "#2A4558",
-        "editor.selectionHighlightBorder": "#E4D9C5",
         "activityBar.foreground": "#E4D9C5",
         "terminal.ansiBrightBlack": "#a88",
-        "editor.foldBackground": "#2c4250"
+        "editor.foldBackground": "#2C4250"
+    },
+    "editor.occurrencesHighlight": false,
+    "highlight-matching-tag.styles": {
+        "opening": {
+            "full": {
+                "highlight": "rgba(255,198,0, 0.2)"
+            }
+        }
     },
     "explorer.openEditors.visible": 0,
     "editor.tabSize": 2,
@@ -76,5 +83,8 @@
     "diffEditor.renderSideBySide": true,
     "workbench.list.keyboardNavigation": "filter",
     "timeline.showView": true,
-    "editor.semanticHighlighting.enabled": true
+    "editor.semanticHighlighting.enabled": true,
+    "editor.matchBrackets": "near",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "editor.parameterHints.enabled": false
 }
