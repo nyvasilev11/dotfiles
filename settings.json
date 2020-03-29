@@ -1,40 +1,19 @@
- {
-    "workbench.startupEditor": "newUntitledFile",
+{
+    "workbench.colorTheme": "Cobalt2",
+    "editor.fontFamily": "'PTMono',' Droid Sans Mono', 'Droid Sans Fallback'",
     "editor.cursorStyle": "block",
-    "editor.fontFamily": "'PTMono', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 16,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true,
-    "editor.minimap.showSlider": "always",
-    "editor.acceptSuggestionOnEnter": "smart",
-    "editor.snippetSuggestions": "top",
-    "editor.suggest.insertHighlight": true,
+    "editor.tabCompletion": "on",
+    "editor.formatOnSave": true,
     "editor.suggest.maxVisibleSuggestions": 10,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "workbench.tree.renderIndentGuides": "always",
-    "window.menuBarVisibility": "compact",
+    "files.trimFinalNewlines": true,
+    "workbench.list.multiSelectModifier": "alt",
+    "workbench.preferredDarkColorTheme": "Cobalt2",
+    "workbench.editor.closeOnFileDelete": true,
     "window.zoomLevel": -0.5,
-    "search.enableSearchEditorPreview": true,
-    "search.showLineNumbers": true,
-    "search.useGlobalIgnoreFiles": true,
-    "terminal.integrated.macOptionIsMeta": true,
+    "explorer.openEditors.visible": 0,
+    "search.smartCase": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "css.lint.duplicateProperties": "warning",
-    "css.lint.float": "warning",
-    "css.lint.important": "warning",
-    "css.lint.universalSelector": "warning",
-    "emmet.triggerExpansionOnTab": true,
-    "html.format.endWithNewline": true,
-    "html.mirrorCursorOnMatchingTag": false,
-    "scss.lint.duplicateProperties": "warning",
-    "scss.lint.float": "warning",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Cobalt2",
-    "extensions.ignoreRecommendations": false,
-    "workbench.settings.editor": "json",
-    "workbench.settings.useSplitJSON": true,
     "editor.tokenColorCustomizations": {
         "[Cobalt2]": {
             "comments": "#AE7A2C"
@@ -48,9 +27,8 @@
         "editor.selectionHighlightBackground": "#2A4558",
         "activityBar.foreground": "#E4D9C5",
         "terminal.ansiBrightBlack": "#a88",
-        "editor.foldBackground": "#2C4250"
+        "editor.foldBackground": "#2C4250",
     },
-    "editor.occurrencesHighlight": false,
     "highlight-matching-tag.styles": {
         "opening": {
             "full": {
@@ -58,33 +36,19 @@
             }
         }
     },
-    "explorer.openEditors.visible": 0,
-    "editor.tabSize": 2,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.smoothScrolling": true,
-    "editor.wordWrap": "on",
-    "workbench.editor.enablePreview": false,
-    "explorer.confirmDelete": false,
-    "prettier.jsxBracketSameLine": true,
-    "editor.formatOnSave": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "typescript.suggest.autoImports": false,
-    "javascript.suggest.autoImports": false,
-    "explorer.confirmDragAndDrop": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "diffEditor.renderSideBySide": true,
-    "workbench.list.keyboardNavigation": "filter",
-    "timeline.showView": true,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.matchBrackets": "near",
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    "editor.parameterHints.enabled": false
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "editor.renderWhitespace": "all",
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.rulers": [
+        {
+            "column": 80,
+            "color": "#2A4558"
+        },
+        {
+            "column": 100,
+            "color": "#2A4558"
+        }
+    ],
 }
