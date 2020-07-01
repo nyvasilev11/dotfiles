@@ -1,0 +1,76 @@
+{
+  "editor.fontFamily": "'PT Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.cursorStyle": "block",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.wordWrap": "off",
+  "editor.definitionLinkOpensInPeek": true,
+  "editor.renameOnType": true,
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  "editor.smoothScrolling": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.minimap.showSlider": "always",
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.maxVisibleSuggestions": 5,
+  "files.insertFinalNewline": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.labelFormat": "medium",
+  "workbench.settings.editor": "json",
+  "window.menuBarVisibility": "compact",
+  "window.doubleClickIconToClose": true,
+  "window.titleBarStyle": "custom",
+  "explorer.incrementalNaming": "smart",
+  "explorer.openEditors.visible": 0,
+  "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "search.useIgnoreFiles": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "html.format.endWithNewline": true,
+  "html.format.indentInnerHtml": true,
+  "workbench.settings.useSplitJSON": true,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.iconTheme": "seti",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "explorer.confirmDelete": false,
+  // "window.zoomLevel": -0.5,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.list.smoothScrolling": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.parameterHints.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.printWidth": 300,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+
