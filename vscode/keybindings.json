@@ -67,7 +67,7 @@
     "command": "editor.action.smartSelect.grow",
     "when": "editorTextFocus"
   },
-    {
+  {
     "key": "ctrl+shift+d",
     "command": "-workbench.view.debug"
   },
@@ -92,5 +92,9 @@
   {
     "key": "shift+alt+w",
     "command": "editor.action.smartSelect.grow"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "search.action.openEditor"
   }
 ]

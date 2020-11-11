@@ -13,7 +13,6 @@
   "editor.formatOnType": true,
   "editor.minimap.showSlider": "always",
   "editor.snippetSuggestions": "top",
-  "editor.suggest.maxVisibleSuggestions": 5,
   "files.insertFinalNewline": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.closeOnFileDelete": true,
@@ -42,33 +41,25 @@
   "explorer.confirmDelete": false,
   "window.zoomLevel": -1,
   "explorer.confirmDragAndDrop": false,
-  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreview": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.list.smoothScrolling": true,
-  "liveServer.settings.donotShowInfoMsg": true,
   "editor.parameterHints.enabled": false,
   //change default terminal. Needed for dual window terminal
   "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
-  "editor.rulers": [
-    100
-  ],
+  "editor.rulers": [100],
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#928374"
   },
   "eslint.alwaysShowStatus": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
+    "source.fixAll.eslint": true
+    // "source.organizeImports": true
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "eslint.format.enable": true,
   "[typescript]": {
     "editor.formatOnSave": false,
@@ -79,7 +70,13 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "files.eol": "\n",
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "prettier.printWidth": 150,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.views.repositories.files.layout": "tree",
+  "editor.suggest.showStatusBar": true
   // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
   // "terminal.integrated.shell.windows3": "D:\\Program Files\\Git\\bin\\bash.exe"
 }
