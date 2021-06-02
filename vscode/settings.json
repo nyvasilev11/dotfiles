@@ -4,7 +4,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.wordWrap": "on",
   "editor.definitionLinkOpensInPeek": true,
-  "editor.renameOnType": true,
+  "editor.linkedEditing": true,
   "editor.unfoldOnClickAfterEndOfLine": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -13,10 +13,11 @@
   "editor.formatOnType": true,
   "editor.minimap.showSlider": "always",
   "editor.snippetSuggestions": "top",
+  "files.eol": "\n",
   "files.insertFinalNewline": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.labelFormat": "default",
   "workbench.settings.editor": "json",
   "window.menuBarVisibility": "compact",
   "window.doubleClickIconToClose": true,
@@ -39,7 +40,6 @@
   "javascript.format.semicolons": "insert",
   "typescript.format.semicolons": "insert",
   "explorer.confirmDelete": false,
-  "window.zoomLevel": -1,
   "explorer.confirmDragAndDrop": false,
   "workbench.editor.enablePreview": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -49,9 +49,15 @@
   "editor.parameterHints.enabled": false,
   //change default terminal. Needed for dual window terminal
   "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
-  "editor.rulers": [100],
+  "editor.rulers": [
+    100
+  ],
   "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#928374"
+    "editorRuler.foreground": "#928374",
+    "statusBar.background": "#b55d02",
+    "statusBar.noFolderBackground": "#b55d02",
+    "statusBar.debuggingBackground": "#b55d02",
+    "statusBar.foreground": "#fff"
   },
   "eslint.alwaysShowStatus": true,
   "editor.formatOnSave": true,
@@ -59,7 +65,12 @@
     "source.fixAll.eslint": true
     // "source.organizeImports": true
   },
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "eslint.format.enable": true,
   "[typescript]": {
     "editor.formatOnSave": false,
@@ -69,14 +80,56 @@
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "files.eol": "\n",
   "diffEditor.ignoreTrimWhitespace": false,
-  "prettier.printWidth": 150,
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "gitlens.views.repositories.files.layout": "tree",
-  "editor.suggest.showStatusBar": true
-  // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-  // "terminal.integrated.shell.windows3": "D:\\Program Files\\Git\\bin\\bash.exe"
+  "editor.suggest.showStatusBar": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "editor.fontSize": 12,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  //vim settings
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": false,
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-w>": true
+  },
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.insert": "#aacc00",
+  "vim.statusBarColors.visual": "#b55d02",
+  "vim.statusBarColors.visualline": "#af1d66",
+  "vim.statusBarColors.visualblock": "#a8243a",
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.searchinprogressmode": "##33a3ff",
+  "vim.statusBarColors.easymotionmode": "#33a3ff",
+  "vim.statusBarColors.easymotioninputmode": "#33a3ff",
+  "vim.statusBarColors.surroundinputmode": "#33a3ff",
+  "vim.statusBarColors.normal": "#00cccc",
+  "vim.useSystemClipboard": true,
+  //end vim settings
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.decorations.badges": true,
+  "search.mode": "reuseEditor",
+  "terminal.external.windowsExec": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.5.10271.0_x64__8wekyb3d8bbwe\\wt.exe",
+  "vim.foldfix": true,
+  "gitlens.advanced.messages": {
+    "suppressImproperWorkspaceCasingWarning": true
+  },
+  "extensions.autoUpdate": "onlyEnabledExtensions",
 }
