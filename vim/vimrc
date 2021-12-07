@@ -1,39 +1,99 @@
-" execute package manager VimPlug
-call plug#begin()
-Plug 'morhetz/gruvbox'
-call plug#end()
+execute pathogen#infect()
 
-"general
-set number
+" GENERAL SETTINGS --------------------------------------------------------------- {{{
+colorscheme gruvbox
+" set filetype
 set foldenable
-set showcmd
-set cursorline
-set showmatch
-set incsearch
-set hlsearch
-set noswapfile 
 syntax on
-set laststatus=2
 set bg=dark
-set wrap linebreak nolist
-set scrolloff=10
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
-set tabstop=2
+filetype plugin indent on
+set number
 set autoindent
+set laststatus=2
+set cursorline
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set nobackup
+set scrolloff=10
+set nowrap
+set noswapfile
+set incsearch
+set ignorecase
+set smartcase
+set showcmd
+set showmode
+set showmatch
+set hlsearch
+set history=1000
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+set guifont="PT Mono"\ Regular\ 12
+set ai
+let g:ale_fix_on_save = 1
+set encoding=utf-8
+set fileencoding=utf-8
+set mouse=a
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
 
-"custom kyboard shortcuts
-let mapleader=","
 
-nnoremap <leader>s :so%<CR>
-inoremap jk <Esc>
-nnoremap <leader>n :noh<CR>
-nnoremap <C-w> :q<CR>
+" copy to/from vIM and the clipboard
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
 
-" move to beginning/end of line
-nnoremap B ^
-nnoremap E $
+" access system clipboard
+set clipboard=unnamed
+" }}}
 
-" $/^ doesn't do anything
-nnoremap $ <nop>
-nnoremap ^ <nop>
+" MAPPINGS --------------------------------------------------------------- {{{
+let leader = '\'
+inoremap jk <esc>
+nnoremap <leader>, :nohlsearch<CR>
+nnoremap <leader>\ ``
+nnoremap <space> :
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+noremap <c-b> :NERDTreeToggle<cr>
+noremap <c-s> :w
+nnoremap <C-P> :Files<CR>
+" }}}
+
+" VIM SCRIPTING --------------------------------------------------------------- {{{
+" Enable the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" Display cursorline and cursorcolumn ONLY in active window.
+augroup cursor_off
+    autocmd!
+    autocmd WinLeave * set nocursorline
+    autocmd WinEnter * set cursorline
+augroup END
+
+" }}}
+
+" STATUS LINE ------------------------------------------------------------ {{{
+
+" Clear status line when vimrc is reloaded.
+set statusline=
+
+" Status line left side.
+set statusline+=\ %F\ %M\ %Y\ %R
+
+" Use a divider to separate the left side from the right side.
+set statusline+=%=
+
+" Status line right side.
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+
+" }}}
+" minimap
+let g:minimap_highlight='Visual'

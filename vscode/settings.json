@@ -1,8 +1,8 @@
 {
   "editor.fontFamily": "'PT Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "editor.cursorStyle": "block",
+  "editor.cursorStyle": "line",
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "off",
   "editor.definitionLinkOpensInPeek": true,
   "editor.linkedEditing": true,
   "editor.unfoldOnClickAfterEndOfLine": true,
@@ -12,7 +12,7 @@
   "editor.smoothScrolling": true,
   "editor.formatOnType": true,
   "editor.minimap.showSlider": "always",
-  "editor.snippetSuggestions": "top",
+  "editor.snippetSuggestions": "inline",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "workbench.startupEditor": "newUntitledFile",
@@ -28,8 +28,7 @@
   "search.showLineNumbers": true,
   "search.smartCase": true,
   "search.useIgnoreFiles": false,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
   "workbench.settings.useSplitJSON": true,
@@ -47,17 +46,16 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.list.smoothScrolling": true,
   "editor.parameterHints.enabled": false,
-  //change default terminal. Needed for dual window terminal
-  "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
   "editor.rulers": [
     100
   ],
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#928374",
-    "statusBar.background": "#b55d02",
-    "statusBar.noFolderBackground": "#b55d02",
-    "statusBar.debuggingBackground": "#b55d02",
-    "statusBar.foreground": "#fff"
+    "statusBar.background": "#00cccc",
+    "statusBar.noFolderBackground": "#00cccc",
+    "statusBar.debuggingBackground": "#00cccc",
+    "statusBar.foreground": "#fff",
+    "editorHoverWidget.highlightForeground": "#9b1111"
   },
   "eslint.alwaysShowStatus": true,
   "editor.formatOnSave": true,
@@ -71,6 +69,9 @@
     "typescript",
     "typescriptreact"
   ],
+  // formatter on the row below is for formating in testing environment
+  // disable on prod
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.format.enable": true,
   "[typescript]": {
     "editor.formatOnSave": false,
@@ -80,6 +81,7 @@
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  // end disable on prod
   "diffEditor.ignoreTrimWhitespace": false,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -107,7 +109,8 @@
   "vim.hlsearch": false,
   "vim.handleKeys": {
     "<C-f>": false,
-    "<C-w>": true
+    "<C-w>": true,
+    "<C-r>": true
   },
   "vim.statusBarColorControl": true,
   "vim.statusBarColors.insert": "#aacc00",
@@ -116,20 +119,31 @@
   "vim.statusBarColors.visualblock": "#a8243a",
   "vim.statusBarColors.replace": "#D08770",
   "vim.statusBarColors.searchinprogressmode": "##33a3ff",
-  "vim.statusBarColors.easymotionmode": "#33a3ff",
+  "vim.statusBarColors.easymotionmode": "#34a3ff",
   "vim.statusBarColors.easymotioninputmode": "#33a3ff",
   "vim.statusBarColors.surroundinputmode": "#33a3ff",
   "vim.statusBarColors.normal": "#00cccc",
   "vim.useSystemClipboard": true,
+  "vim.foldfix": true,
   //end vim settings
   "workbench.editor.wrapTabs": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.decorations.badges": true,
   "search.mode": "reuseEditor",
   "terminal.external.windowsExec": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.5.10271.0_x64__8wekyb3d8bbwe\\wt.exe",
-  "vim.foldfix": true,
   "gitlens.advanced.messages": {
     "suppressImproperWorkspaceCasingWarning": true
   },
   "extensions.autoUpdate": "onlyEnabledExtensions",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "window.zoomLevel": -1,
+  "editor.guides.bracketPairs": "active",
+  "html.completion.attributeDefaultValue": "singlequotes",
+  "emmet.triggerExpansionOnTab": true
 }
