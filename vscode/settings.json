@@ -1,6 +1,8 @@
-{
-  "editor.fontFamily": "'PT Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "editor.cursorStyle": "line",
+
+  "editor.fontFamily": "'Source Code Pro', 'PT Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.cursorStyle": "block",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.wordWrap": "off",
   "editor.definitionLinkOpensInPeek": true,
@@ -11,29 +13,25 @@
   "editor.renderLineHighlightOnlyWhenFocus": true,
   "editor.smoothScrolling": true,
   "editor.formatOnType": true,
-  "editor.minimap.showSlider": "always",
   "editor.snippetSuggestions": "inline",
-  "files.eol": "\n",
   "files.insertFinalNewline": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.labelFormat": "default",
   "workbench.settings.editor": "json",
-  "window.menuBarVisibility": "compact",
   "window.doubleClickIconToClose": true,
   "window.titleBarStyle": "custom",
   "explorer.incrementalNaming": "smart",
   "explorer.openEditors.visible": 0,
   "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
   "search.showLineNumbers": true,
+  "search.sortOrder": "type",
   "search.smartCase": true,
   "search.useIgnoreFiles": false,
   "telemetry.telemetryLevel": "off",
-  "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
   "workbench.settings.useSplitJSON": true,
-  "workbench.colorTheme": "Gruvbox Dark Medium",
-  "workbench.iconTheme": "seti",
+  "workbench.iconTheme": "vscode-icons",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
   "javascript.format.semicolons": "insert",
@@ -46,104 +44,121 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.list.smoothScrolling": true,
   "editor.parameterHints.enabled": false,
-  "editor.rulers": [
-    100
-  ],
-  "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#928374",
-    "statusBar.background": "#00cccc",
-    "statusBar.noFolderBackground": "#00cccc",
-    "statusBar.debuggingBackground": "#00cccc",
-    "statusBar.foreground": "#fff",
-    "editorHoverWidget.highlightForeground": "#9b1111"
-  },
+  "editor.rulers": [120],
+  "color-highlight.markerType": "dot-before",
   "eslint.alwaysShowStatus": true,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-    // "source.organizeImports": true
-  },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact"
   ],
-  // formatter on the row below is for formating in testing environment
-  // disable on prod
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.format.enable": true,
-  "[typescript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  // end disable on prod
   "diffEditor.ignoreTrimWhitespace": false,
-  "[jsonc]": {
+  "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "gitlens.views.repositories.files.layout": "tree",
   "editor.suggest.showStatusBar": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "editor.fontSize": 12,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  // ----------------------------------------------------------------------
+  // vscode autoformatter
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // foramtter
+  // eslint prettier integration for TypeScript
+  // need eslint plugin to be installed.
+  // No need of extension
+  // "[typescript]": {
+  //   "editor.formatOnSave": false,
+  // },
+  // "[typescriptreact]": {
+  //   "editor.formatOnSave": false,
+  // },
+  // "[javascript]": {
+  //   "editor.formatOnSave": false,
+  // },
+  // "[javascriptreact]": {
+  //   "editor.formatOnSave": false,
+  // },
+  // end eslint prettier integration
+  // end of vscode autoformatter
+  // ----------------------------------------------------------------------
   //vim settings
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
     }
   ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<space>"],
+      "after": [":"]
+    },
+    {
+      "before": ["<c-j>"],
+      "after": ["<c-w>", "j"]
+    },
+    {
+      "before": ["<c-k>"],
+      "after": ["<c-w>", "k"]
+    },
+    {
+      "before": ["<c-h>"],
+      "after": ["<c-w>", "h"]
+    },
+    {
+      "before": ["<c-l>"],
+      "after": ["<c-w>", "l"]
+    }
+  ],
+  "vim.leader": "\\",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": false,
   "vim.handleKeys": {
     "<C-f>": false,
-    "<C-w>": true,
     "<C-r>": true
   },
-  "vim.statusBarColorControl": true,
-  "vim.statusBarColors.insert": "#aacc00",
-  "vim.statusBarColors.visual": "#b55d02",
-  "vim.statusBarColors.visualline": "#af1d66",
-  "vim.statusBarColors.visualblock": "#a8243a",
-  "vim.statusBarColors.replace": "#D08770",
-  "vim.statusBarColors.searchinprogressmode": "##33a3ff",
-  "vim.statusBarColors.easymotionmode": "#34a3ff",
-  "vim.statusBarColors.easymotioninputmode": "#33a3ff",
-  "vim.statusBarColors.surroundinputmode": "#33a3ff",
-  "vim.statusBarColors.normal": "#00cccc",
   "vim.useSystemClipboard": true,
   "vim.foldfix": true,
   //end vim settings
+  // ----------------------------------------------------------------------
   "workbench.editor.wrapTabs": true,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.decorations.badges": true,
   "search.mode": "reuseEditor",
-  "terminal.external.windowsExec": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.5.10271.0_x64__8wekyb3d8bbwe\\wt.exe",
-  "gitlens.advanced.messages": {
-    "suppressImproperWorkspaceCasingWarning": true
-  },
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "editor.tabSize": 4,
+  "workbench.editor.tabSizing": "fit",
   "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.bracketPairColorization.enabled": true,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
-  "window.zoomLevel": -1,
   "editor.guides.bracketPairs": "active",
   "html.completion.attributeDefaultValue": "singlequotes",
-  "emmet.triggerExpansionOnTab": true
+  "emmet.triggerExpansionOnTab": true,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.tree.renderIndentGuides": "always",
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "workbench.editor.untitled.hint": "hidden",
+  "window.menuBarVisibility": "compact",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "explorer.fileNesting.enabled": true,
+  "git.mergeEditor": true,
+  "window.commandCenter": true,
+  "editor.minimap.showSlider": "always",
+  "terminal.integrated.smoothScrolling": true
 }
