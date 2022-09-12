@@ -1,163 +1,112 @@
-//CSS
 {
-  "margin": {
-    "prefix": "m",
-    "body": ["margin: ${0};"],
-    "description": "margin"
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  // Basic methods
+  "simple import module": {
+    "prefix": "imp",
+    "body": "import $1 from '$0';",
+    "description": "simple import"
   },
-  "margin-top": {
-    "prefix": "mt",
-    "body": ["margin-top: ${0};"],
-    "description": "margin-top"
+  "export simple arrow function": {
+    "prefix": "exf",
+    "body": "export const $1 = ($2) => { };",
+    "description": "export simple function"
   },
-  "margin-bottom": {
-    "prefix": "mb",
-    "body": ["margin-bottom: ${0};"],
-    "description": "margin-bottom"
+  "Arrow function": {
+    "prefix": "nfn",
+    "body": "const $1 = ($2) => { };",
+    "description": "Arrow function"
   },
-  "margin-left": {
-    "prefix": "ml",
-    "body": ["margin-left: ${0};"],
-    "description": "margin-left"
+  "Object destructuring": {
+    "prefix": "dob",
+    "body": "const { $1 } = $2;",
+    "description": "Object destructuring"
   },
-  "margin-right": {
-    "prefix": "mr",
-    "body": ["margin-right: ${0};"],
-    "description": "margin-right"
+  "Array destructuring": {
+    "prefix": "dar",
+    "body": "const [ $1 ] = $2;",
+    "description": "Array destructuring"
   },
-  "padding": {
-    "prefix": "p",
-    "body": ["padding: ${0};"],
-    "description": "padding"
+  "comment block": {
+    "prefix": "cmmb",
+    "body": [
+      "/**",
+      "|--------------------------------------------------",
+      "| $1",
+      "|--------------------------------------------------",
+      "*/"
+    ],
+    "description": "comment block"
   },
-  "padding-top": {
-    "prefix": "pt",
-    "body": ["padding-top: ${0};"],
-    "description": "padding-top"
+  // Console
+  "console log": {
+    "prefix": "clg",
+    "body": "console.log($1);",
+    "description": "console log"
   },
-  "padding-bottom": {
-    "prefix": "pb",
-    "body": ["padding-bottom: ${0};"],
-    "description": "padding-bottom"
+  "console log with object": {
+    "prefix": "clo",
+    "body": "console.log('$1', $2);",
+    "description": "console log"
   },
-  "padding-left": {
-    "prefix": "pl",
-    "body": ["padding-left: ${0};"],
-    "description": "padding-left"
+  // React
+  "import React": {
+    "prefix": "imr",
+    "body": "import React from 'react';",
+    "description": "import React"
   },
-  "padding-right": {
-    "prefix": "pr",
-    "body": ["padding-right: ${0};"],
-    "description": "padding-right"
+  "import React Component within from react": {
+    "prefix": "imrc",
+    "body": "import React, { $1 } from 'react';",
+    "description": "import React Component from react"
   },
-  "font-face": {
-    "prefix": "@f",
-    "body": ["@font-face {", "  font-family: \"${0}\";", "  src: url(${1});", "}"],
-    "description": "font-face"
+  // Functions and Components
+  "Arrow function component with proptypes": {
+    "prefix": "rafcp",
+    "body": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "const $1 = (props) => {",
+      "return <div>$0</div>;",
+      "};",
+      "$1.propTypes = {};",
+      "export default $1;"
+    ],
+    "description": "function component with proptypes"
   },
-  "media": {
-    "prefix": "@mmax",
-    "body": ["@media only screen and (max-width: ${1}px){ ${2}}"],
-    "description": "media query max-width"
+  "simple arrow function": {
+    "prefix": "rafc",
+    "body": [
+      "import React from 'react';",
+      "export const $1 = () => {",
+      "return <div>$0</div>;",
+      "};"
+    ],
+    "description": "simple function"
   },
-  "background-color": {
-    "prefix": "bgc",
-    "body": ["background-color:${1:#};"],
-    "description": "background"
-  },
-  "background-url": {
-    "prefix": "bgurl",
-    "body": ["background: url(\"${0}\");"],
-    "description": "background"
-  },
-  "background-repeat": {
-    "prefix": "bgr",
-    "body": ["background-repeat: ${0};"],
-    "description": "background-repeat"
-  },
-  "background-size": {
-    "prefix": "bgsz",
-    "body": ["background-size: ${0};"],
-    "description": "background-size"
-  },
-  "box-sizing": {
-    "prefix": "bxsz",
-    "body": ["box-sizing: border-box;"],
-    "description": "box-sizing"
-  },
-  "display-flex": {
-    "prefix": "df",
-    "body": ["display: flex;"],
-    "description": "display-flex"
-  },
-  "display-inline-block": {
-    "prefix": "dib",
-    "body": ["display: inline-block;"],
-    "description": "display-inline-block"
-  },
-  "display-block": {
-    "prefix": "db",
-    "body": ["display: block;"],
-    "description": "display-block"
-  },
-  "font": {
-    "prefix": "f",
-    "body": ["font: \"${0}\", sans-serif;"],
-    "description": "font"
-  },
-  "float": {
-    "prefix": "fl",
-    "body": ["float: ${0};"],
-    "description": "float"
-  },
-  "font-weight": {
-    "prefix": "fw",
-    "body": ["font-weight: ${0};"],
-    "description": "float-weight"
-  },
-  "flex": {
-    "prefix": "fx",
-    "body": ["flex: 0 0 ${0};"],
-    "description": "flex"
-  },
-  "flex-direction": {
-    "prefix": "fxd",
-    "body": ["flex-direction: ${0};"],
-    "description": "flex-direction"
-  },
-  "font-size": {
-    "prefix": "fsz",
-    "body": ["font-size: ${0};"],
-    "description": "font-size"
-  },
-  "height": {
-    "prefix": "h",
-    "body": ["height: ${0};"],
-    "description": "height"
-  },
-  "flex-justify-content": {
-    "prefix": "fjc",
-    "body": ["justify-content: ${0};"],
-    "description": "flex-justify-content"
-  },
-  "flex-align-items": {
-    "prefix": "fai",
-    "body": ["align-items: ${0};"],
-    "description": "flex-align-items"
-  },
-  "positon": {
-    "prefix": "pos",
-    "body": ["position: ${0};"],
-    "description": "positon"
-  },
-  "width": {
-    "prefix": "w",
-    "body": ["width: ${0};"],
-    "description": "width"
-  },
-  "z-index": {
-    "prefix": "z",
-    "body": ["z-index: ${0};"],
-    "description": "z-index"
+  "Arrow function component": {
+    "prefix": "rafce",
+    "body": [
+      "import React from 'react';",
+      "const $1 = () => {",
+      "return <div>$0</div>;'",
+      "}",
+      "export default $1;"
+    ],
+    "description": "function component"
   }
 }
